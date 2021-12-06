@@ -1,0 +1,39 @@
+.project-card {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  margin: 50px 0;
+  background-color: #0f0e0f;
+  color: #fdfaf9;
+
+  &.dark {
+    background-color: #fdfaf9;
+    color: #0f0e0f;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 0 20px 0 20px;
+    gap: 15px;
+    &__net {
+      width: min-content;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #fdfaf9;
+      color: #0f0e0f;
+      &.dark {
+        background-color: #0f0e0f;
+      color: #fdfaf9;
+      }
+    }
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__img {
+    width: 60%;
+    height: 100%;
+  }
+}
